@@ -1,0 +1,63 @@
+<div class="content">
+	<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" ng-repeat="obj in arr[0].act_rows"><img src={{obj.activity.img}} alt="" class="img1"/></div>
+		<div class="swiper-slide"><img src="" alt="" class="img2"/></div>
+	</div>
+</div>
+<!--
+	作者：offline
+	时间：2017-02-24
+	描述：sizhang
+-->
+<ul class="four">
+	<li ng-repeat="obj in arr[1].act_rows">
+		<div class="items-img"><img src={{obj.activity.img}} /> </div>
+		<p>{{obj.activity.name}}</p>
+	</li>
+</ul>
+
+<ul class="three">
+	<li ng-repeat="obj in arr[3].act_rows">
+		<img src={{obj.activity.img}} />
+	</li>
+</ul>
+<div class="chead" ng-repeat="obj in arr[4].act_rows[0].act_rows">
+	<div style="background: url({{obj.chead_detail.img}});background-size: 100% 100%;"></div>
+</div>
+<div class="cicons">
+	<ul>
+		<li ng-repeat="obj in arr[4].act_rows[2].act_rows" style="background: url({{obj.cicons_detail.img}});background-position: center 15%; background-size: auto 5.4rem;background-repeat: no-repeat;">{{obj.cicons_detail.name}}</li>
+	</ul>
+</div>
+<div class="cscene">
+	<ul>
+		<li ng-repeat="obj in arr[4].act_rows[3].act_rows" style="background: url({{obj.activity.img}});background-position: center center;background-size: 100% 100%;"></li>
+	</ul>
+</div>
+<div id="hCategory">
+	<div ng-repeat="obj in arr[5].act_rows">
+		<p>
+			<span style="color: #{{obj.category_detail.category_color}};border-left: 11px solid #{{obj.category_detail.category_color}};">{{obj.category_detail.name}}</span>
+			<span>更多 &gt;</span>
+		</p>
+		<img src={{obj.activity.img}} />
+		<div ng-repeat="obja in obj.category_detail.goods">
+			<div>
+				<img lazy-src={{obja.img}} />
+			</div>
+			<ul>
+				<li>{{obja.name}}</li>
+				<li>
+					<span>精选</span>
+				</li>
+				<li>{{obja.specifics}}</li>
+				<li>￥{{obja.price}}</li>
+			</ul>
+			<span class="add">
+				<span style="background:url(img/product_operate-57bf1d7b.png);background-repeat: no-repeat;background-size: 200% 100%;background-position: right center;"></span>
+			</span>
+		</div>
+	</div>
+</div>
+</div>

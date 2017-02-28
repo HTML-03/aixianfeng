@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+}
+.view{
+	width: 100%;
+	height: 100%;
+	background: #E0E0E0;
+	overflow: auto;
+	padding-bottom: 5rem;
+}
+
+#mod-navs {
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	bottom: 0;
+	background: rgba(246, 246, 246, 0.95);
+}
+
+.navs-item {
+	width: 25%;
+	float: left;
+	position: relative;
+	font-size: 1.2rem;
+	color: #777;
+	text-align: center;
+	padding-top: 3rem;
+}
+
+.bot-home {
+	background: url(../img/home1.png) no-repeat center 0.6rem;
+	background-size: auto 2rem;
+}
+
+.bot-menu {
+	background: url(../img/shandian1.png) no-repeat center 0.6rem;
+	background-size: auto 2rem;
+}
+
+.bot-cart {
+	background: url(../img/shopcar1.png) no-repeat center 0.6rem;
+	background-size: auto 2rem;
+}
+
+.bot-mine {
+	background: url(../img/mine1.png) no-repeat center 0.6rem;
+	background-size: auto 2rem;
+}
+
+.navs-item a {
+	color: #ffd600;
+}
+
+#top-title{
+	width: 100%;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	position:relative;
+	top: 0;
+	background: #FFD600;
+}
+.top-add{
+	position: absolute;
+	left:6rem;
+	display: inline-block;
+	width: 20rem;
+	height: 4.5rem;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+.top-add span{
+	font-size: 1.2rem;
+}
+.search{
+	position: absolute;
+	right: 0.5rem;
+	display: inline-block;
+	width: 6rem;
+	height: 4.4rem;
+	font-size: 0.8rem;
+	line-height: 7rem;
+	text-align: right;
+	color: #222;
+	background: url(../img/search.png) no-repeat;
+	background-size: auto 2rem;
+	background-position: right 0.7rem;
+}
+#main{
+	width: 100%;
+}
+.bot-cart>span{
+	display: inline-block;
+	position: absolute;
+	top:0.3rem;
+	right: 0.5rem;
+	background: red;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	color: white;
+	border-radius: 100%;
+	display: none;
+}

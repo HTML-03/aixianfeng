@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="aixianfeng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/swiper-3.4.1.min.css"/>
+    <script src="lib/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/angular-route.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/angular-css.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/me-lazyload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="component/home/home.js" type="text/javascript" charset="utf-8"></script>
+    <script src="component/supermarket/supermarket.js" type="text/javascript" charset="utf-8"></script>
+    <script src="component/shop/shop.js" type="text/javascript" charset="utf-8"></script>
+    <script src="component/mine/mine.js" type="text/javascript" charset="utf-8"></script>
+    <script src="component/supermarket/secondPages/product.js" type="text/javascript" charset="utf-8"></script>
+    <script src="component/mine/detail/all/all.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top-title">
+			<div class="top-add">同仁医院<span>▼</span></div>
+			<span class="search">搜&nbsp;索&nbsp;</span>
+		</div>
+		<div ng-view class="view"></div>
+		<ul id="mod-navs">
+			<li class="navs-item bot-home"><a href="#/home">首页</a></li>
+			<li class="navs-item bot-menu"><a href="#/supermarket">闪送超市</a></li>
+			<li class="navs-item bot-cart"><a href="#/shop">购物车</a><span></span></li>
+			<li class="navs-item bot-mine"><a href="#/mine">我的</a></li>
+		</ul>
+	</div>
+</body>
+</html>

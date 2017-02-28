@@ -1,0 +1,9 @@
+angular.module('MineModule',['ngRoute','AllModule'])
+.config(['$routeProvider',function($routeProvider){
+	$routeProvider
+	.when('/mine',{
+		templateUrl:'component/mine/mine.html',
+		controller:'MineCtrl',
+		css:'component/mine/mine.css'
+	})
+}])

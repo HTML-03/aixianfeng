@@ -1,0 +1,44 @@
+<div id="cAll">
+	<div id="cleft">
+		<ul>
+			<li ng-repeat="(i,obj) in arrSpImg" ng-click="cclick(i)"  class="cLi">{{obj.name}}</li>
+		</ul>
+	</div>
+	<div id="cCategroies">
+		<ul>
+			<li  id="allThings" >全部分类<b></b></li>
+			<li  id="sT" >综合排序<b></b></li>
+		</ul>
+	</div>
+	<div class="cover" id="cover">
+		<div>
+			<button>全部分类</button>
+		</div>
+	</div>
+	<div class="cover1" id="cover1">
+		<div>
+			<button ng-click="orderStyle=''">综合排序</button>
+			<button ng-click="orderStyle='-product_num/10000'">销量最高</button>
+			<button ng-click="orderStyle='(partner_price)*10'">价格最低</button>
+			<button ng-click="orderStyle='-(partner_price)*10'">价格最高</button>
+		</div>
+	</div>
+	<div id="cRlist">
+		<div ng-repeat="(j,obja) in arrProducts | orderBy:orderStyle">
+			<a href="#/products">
+				<div ng-click="products(j)">
+					<img lazy-src={{obja.img}} />
+					<ul>
+						<li>{{obja.name}}</li>
+						<li><span>精选</span><span class="buyOne" ng-if="obja._had_pm == '1'">买一赠一</span></li>
+						<li>{{obja.specifics}}</li>
+						<li>￥{{obja.partner_price}}</li>
+					</ul>
+					<span class="count"><span></span></span>
+					<span class="reduce"><span></span></span>
+					<span class="num"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>

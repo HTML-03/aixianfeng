@@ -1,0 +1,48 @@
+.all-content{
+	width: 100%;
+	height: 100%;
+	background: #EFEFEF;
+}
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 4.5rem;
+	text-align: center;
+	line-height: 4.5rem;
+	background: #F9FAFD;
+	z-index: 2;
+	border-bottom: 1px solid #E0E0E0;
+}
+.fanhui{
+	position: absolute;
+	left: 0.6rem;
+	top: 0;
+	width: 6rem;
+	height: 4.4rem;
+	text-align: left;
+	background: url(../../../../img/fanhui.png) no-repeat left center;
+	background-size: auto 2.5rem; 
+}
+.myDingdan{
+	position: absolute;
+	left: 6rem;
+	right: 6rem;
+	color: #333333;
+	text-align: center;
+	font-weight: 700;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 1.4rem;
+}
+.shuaxin{
+	position: absolute;
+	right: .6rem;
+	width: 6rem;
+	height: 4.4rem;
+	text-align: center;
+	background: url(../../../../img/shuaxin.png) no-repeat right center;
+	background-size: auto 2.5rem;
+	color: #777777;
+}
